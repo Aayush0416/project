@@ -19,7 +19,7 @@
 # import streamlit as st
 import streamlit as st
 import sqlite3
-from streamlit-option-menu import option-menu
+from streamlit_option_menu import option_menu
 
 def connectdb():
     conn = sqlite3.connect("mydb.db")
@@ -116,7 +116,7 @@ def Search():
 # Create a Reset password page , create a filter option on branch , a search option based on rollno , delete student record 
 
 with st.sidebar:
-    selected = option-menu("My App",['Signup','Display ALl Record','Reset Password','Filter','Search'])
+    selected = option_menu("My App",['Signup','Display ALl Record','Reset Password','Filter','Search'])
 
 createTable()
 
